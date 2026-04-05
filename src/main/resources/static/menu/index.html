@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>메뉴</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero card">
+      <div class="hero-head">
+        <h1 class="title">무엇을 하시겠어요?</h1>
+        <button id="logout-btn" class="logout-btn">로그아웃</button>
+      </div>
+
+      <p class="subtitle">아래 메뉴를 선택해 이동하세요.</p>
+    </section>
+
+    <section class="menu-grid">
+      <a class="menu-card" data-target="mypage">
+        <div class="menu-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="48" height="48">
+            <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.33 0-8 2.17-8 5v1h16v-1c0-2.83-3.67-5-8-5z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h2 class="menu-title">마이페이지</h2>
+        <p class="menu-desc">프로필 , 오답노트 , 랭킹</p>
+      </a>
+
+      <a class="menu-card" data-target="board">
+        <div class="menu-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="48" height="48">
+            <path d="M4 4h16v12H5.17L4 17.17V4zm2 4h12v2H6zm0 4h8v2H6zm12 8H4a1 1 0 0 1-1-1v-2.59L5.41 16H21a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h2 class="menu-title">게시판</h2>
+        <p class="menu-desc">자유게시판 , 질문게시판</p>
+      </a>
+
+      <a class="menu-card" data-target="learn">
+        <div class="menu-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="48" height="48">
+            <path d="M4 5h10v2H4zm0 4h16v2H4zm0 4h16v2H4zm0 4h10v2H4z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h2 class="menu-title">공부하기</h2>
+        <p class="menu-desc">퀴즈</p>
+      </a>
+    </section>
+  </main>
+<script type="module" src=menu.js></script>
+</body>
+</html>

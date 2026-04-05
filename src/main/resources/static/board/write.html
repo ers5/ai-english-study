@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>글쓰기</title>
+  <link rel="stylesheet" href="board.css">
+  <link rel="stylesheet" href="write.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-mark">AI</div>
+    <div class="brand-name">영어 학습</div>
+  </div>
+
+  <div class="top-actions">
+    <a href="board.html" class="btn ghost">&lt; 게시판으로</a>
+  </div>
+</div>
+
+<div class="page">
+  <div class="card write-box">
+    <h2 class="write-title">글 작성하기</h2>
+
+    <label class="label">제목</label>
+    <input type="text" class="input title-input" placeholder="제목을 입력하세요">
+
+    <label class="label">내용</label>
+    <textarea class="input content-input" placeholder="내용을 입력하세요"></textarea>
+
+    <div class="write-actions">
+      <button class="btn primary write-submit">등록하기</button>
+      <button class="btn ghost write-cancel" onclick="history.back()">취소</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="write.js"></script>
+</body>
+</html>

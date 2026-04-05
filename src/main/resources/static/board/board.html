@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>게시판</title>
+  <link rel="stylesheet" href="board.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">💬</div>
+      <span class="brand-name">게시판</span>
+    </div>
+    <nav class="top-actions">
+      <a class="btn ghost" href="#" id="menu-btn">메뉴로</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="tabs card">
+<!-- #7 [추가] 탭 전환 버튼 추가 - 기존에는 한 페이지에 자유게시판,질문게시판이
+ 둘다 있었으나 가독성이 떨어져 탭 전환 버튼을 통해 게시판모드를 변경시키게 하기위해 추가함 -->
+
+      <button class="tab active" data-target="free">자유게시판</button>
+      <button class="tab" data-target="question">질문게시판</button>
+    </section>
+
+    <section id="free" class="board card active">
+      <div class="board-head">
+        <h2>자유게시판</h2>
+        <a href="#" class="btn primary">글쓰기</a>
+      </div>
+      <table class="board-table">
+        <thead>
+          <tr><th>번호</th><th>제목</th><th>작성자</th><th>날짜</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>오늘의 공부 인증합니다 📖</td><td>홍길동</td><td>2025-11-05</td></tr>
+          <tr><td>2</td><td>새로운 단어 외우는 법 공유해요</td><td>이영희</td><td>2025-11-04</td></tr>
+          <tr><td>3</td><td>학습하기 페이지 너무 좋네요!</td><td>김철수</td><td>2025-11-03</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="question" class="board card">
+      <div class="board-head">
+        <h2>질문게시판</h2>
+        <a href="#" class="btn primary">질문하기</a>
+      </div>
+      <table class="board-table">
+        <thead>
+          <tr><th>번호</th><th>질문 제목</th><th>작성자</th><th>날짜</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>영어 시제 구분이 너무 어려워요 😥</td><td>박지훈</td><td>2025-11-05</td></tr>
+          <tr><td>2</td><td>해석이 자연스러운 문장 예시가 궁금해요</td><td>정다은</td><td>2025-11-04</td></tr>
+          <tr><td>3</td><td>영어 공부 어떻게 하는게 좋을까요?</td><td>이민호</td><td>2025-11-02</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="board.js"></script>
+</body>
+</html>

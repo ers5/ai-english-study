@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로그인</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<section class="card">
+  <div class="logo-wrap">
+    <div class="logo">
+      <img src="logo.png" alt="로고" />
+    </div>
+  </div>
+
+  <!-- 🔹 id 추가 -->
+  <form class="form" id="loginForm" autocomplete="on">
+    <h1 class="title">AI로 영어 공부하자!</h1>
+    <div class="stack">
+      <div class="field">
+        <label for="uid">ID</label>
+        <input id="uid" name="id" type="text" placeholder="아이디 또는 이메일" required />
+      </div>
+
+      <div class="field">
+        <label for="upw">PASSWORD</label>
+        <input id="upw" name="password" type="password" placeholder="비밀번호" required />
+      </div>
+
+      <div class="actions">
+        <!-- 🔹 submit 으로 변경 -->
+        <button id="loginBtn" class="btn btn-primary" type="submit">LOGIN</button>
+
+        <a class="btn btn-ghost" href="signup.html">회원가입</a>
+      </div>
+    </div>
+  </form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

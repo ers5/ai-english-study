@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>마이페이지</title>
+  <link rel="stylesheet" href="mypage.css" />
+</head>
+<body>
+  <input type="checkbox" id="rank-toggle" class="visually-hidden" />
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">🌀</div>
+        <span class="brand-name">MY PAGE</span>
+      </div>
+      <div class="top-actions">
+        <a class="btn ghost" href="#">오답노트 이동</a>
+        <!-- #1 [추가] 기존엔 한 페이지에 오답노트가 같이 있었으나, 
+         오답 노트는 양이 많아서 별개로 두는 것이 좋을것 같아서 오답페이지로 가는 버튼을 추가 -->
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="profile">
+        <div class="avatar">Study</div>
+        <div class="info">
+          <h1 class="title">안녕하세요</h1>
+          <p class="subtitle">오늘도 한 걸음씩 성장해볼까요?</p>
+        </div>
+      </div>
+    </section>
+
+    <main class="grid">
+      <section class="card stats">
+        <h2 class="card-title">학습 현황</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-number">12</div>
+            <div class="stat-label">연속 학습일</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">20</div>
+            <div class="stat-label">오늘 문 푼제 수</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">230</div>
+            <div class="stat-label">지금까지 푼 총 문제 수</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">6</div>
+            <div class="stat-label">오답갯수</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card progress">
+        <h2 class="card-title">나의 점수는?</h2>
+        <div class="bar">
+          <div class="bar-fill" style="width:72%"></div>
+        </div>
+        <div class="bar-meta">
+          <span>72</span>
+        </div>
+      </section>
+
+      
+    </main>
+  </div>
+
+  <aside class="rank-panel">
+    <div class="rank-header">
+      <h2>이번 주 랭킹</h2>
+      <label for="rank-toggle" class="close">닫기</label>
+    </div>
+    <ol class="rank-list">
+      <li>
+        <span class="badge">1</span>
+        <div class="who">
+          <span class="nick">Nova</span>
+          <span class="score">점수 980</span>
+        </div>
+      </li>
+      <li>
+        <span class="badge">2</span>
+        <div class="who">
+          <span class="nick">Jay</span>
+          <span class="score">점수 915</span>
+        </div>
+      </li>
+      <li>
+        <span class="badge">3</span>
+        <div class="who">
+          <span class="nick">Ari</span>
+          <span class="score">점수 890</span>
+        </div>
+      </li>
+      <li>
+        <span class="badge">4</span>
+        <div class="who">
+          <span class="nick">June</span>
+          <span class="score">점수 860</span>
+        </div>
+      </li>
+      <li>
+        <span class="badge">5</span>
+        <div class="who">
+          <span class="nick">Mina</span>
+          <span class="score">점수 845</span>
+        </div>
+      </li>
+    </ol>
+  </aside>
+
+  <label class="scrim" for="rank-toggle"></label>
+<a href="#" class="back-fab" aria-label="메뉴로 돌아가기">
+  <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+    <path d="M15 18l-6-6 6-6" fill="currentColor"/>
+  </svg>
+  메뉴로
+</a>
+</body>
+<script src="mypage.js"></script>
+</html>

@@ -1,0 +1,79 @@
+*{box-sizing:border-box}
+:root{
+  --bg:#f7f9fc;
+  --panel:#ffffff;
+  --border:#e3e8ef;
+  --text:#0f172a;
+  --muted:#64748b;
+  --primary:#3b82f6;
+  --primary-600:#2563eb;
+  --radius:18px
+}
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans KR",Arial;
+  background:radial-gradient(1200px 600px at 80% -10%, rgba(59,130,246,.08), transparent), var(--bg);
+  color:var(--text)
+}
+.topbar{
+  max-width:1120px;margin:24px auto 0;padding:0 20px 16px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px
+}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  display:grid;place-items:center;
+  background:linear-gradient(180deg,var(--primary),var(--primary-600));
+  color:#fff;font-weight:900;box-shadow:0 10px 20px rgba(37,99,235,.25)
+}
+.brand-name{font-weight:900}
+.top-actions{display:flex;gap:10px}
+.btn{
+  border:0;border-radius:999px;
+  padding:10px 16px;font-weight:800;
+  display:inline-flex;align-items:center;justify-content:center;
+  text-decoration:none;cursor:pointer;font-size:14px;line-height:1;
+  transition:transform .06s ease,filter .2s ease,box-shadow .2s ease,background .2s ease
+}
+.btn.primary{
+  background:linear-gradient(180deg,var(--primary),var(--primary-600));
+  color:#fff;box-shadow:0 10px 20px rgba(37,99,235,.25)
+}
+.btn.ghost{
+  background:#fff;color:var(--primary-600);
+  border:1.5px solid #c7d2fe;box-shadow:0 3px 10px rgba(2,6,23,.06)
+}
+.page{max-width:1120px;margin:0 auto;padding:0 20px 28px}
+.card{
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:var(--radius);box-shadow:0 20px 40px rgba(2,6,23,.06);
+  padding:18px
+}
+.tabs{
+  display:flex;gap:10px;justify-content:center;margin-top:12px
+}
+.tab{
+  flex:1;max-width:200px;padding:12px 0;font-weight:800;font-size:15px;
+  border-radius:14px;border:1.5px solid #c7d2fe;background:#fff;color:#2563eb;
+  cursor:pointer;transition:background .2s ease,border-color .2s ease
+}
+.tab.active{
+  background:linear-gradient(180deg,var(--primary),var(--primary-600));
+  color:#fff;border-color:transparent;box-shadow:0 8px 18px rgba(37,99,235,.25)
+}
+/*<!-- #8 [추가] 탭 선택시 강조 – 기존에는 선택된 탭이 강조되지않아 가독성이 떨어짐  
+css를 추가해서 선택된 탭을 강조해 가독성을 높임-->*/
+.board{display:none;margin-top:18px}
+.board.active{display:block}
+.board-head{
+  display:flex;align-items:center;justify-content:space-between;margin-bottom:12px
+}
+.board-head h2{margin:0;font-size:20px;font-weight:900}
+.board-table{
+  width:100%;border-collapse:collapse;font-size:15px
+}
+.board-table th, .board-table td{
+  border-bottom:1px solid var(--border);padding:12px 8px;text-align:left
+}
+.board-table th{background:#f8fafc;font-weight:900;color:#374151}
+.board-table tbody tr:hover{background:#f1f5ff}
