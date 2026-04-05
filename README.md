@@ -18,8 +18,12 @@ Spring Boot 기반의 AI 영어 학습 프로젝트입니다.
 
 ## 실행 방법
 1. Java 17 이상 설치
-2. 환경변수 설정
-   - `GEMINI_API_KEY`
+2. 환경변수 설정  
+   Gemini API 키를 환경변수로 등록해야 합니다.
+
+   **Windows PowerShell**
+   ```powershell
+   $env:GEMINI_API_KEY="your_api_key_here"
 3. 프로젝트 실행
    ```bash
    ./gradlew bootRun
